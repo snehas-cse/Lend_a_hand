@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Registration Form Using Bootstrap 4</title>
+</head>
+<body>
+
+    <div class="container  " >
+        <form method="POST" action="/addorganisedevent">
+            <h2 class="text-center">Add Event</h2>
+        <div class="row jumbotron">
+            
+            <div class="col-sm-12 form-group">
+                <label for="title">Activity Title</label>
+                <input type="text" class="form-control" name="title" id="title" placeholder="Enter Activity Title." required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="name-l">Activity description</label>
+                
+            </div>
+            <div class="input-group  col-sm-12 form-group" >
+                
+                <textarea class="form-control" name="description" id="'description" placeholder="Enter description." required></textarea>
+              </div>
+              <div class="col-sm-6 form-group">
+                <label for="Date">Event Date</label>
+                <input type="Date" name="date" class="form-control" id="Date" placeholder="" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="address-1">Google Map URL</label>
+                <input type="address" class="form-control" name="URL" id="url" placeholder="URL" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="address-2">Latitude</label>
+                <input type="address" class="form-control" name="Latitude" id="Latitude" placeholder="Latitude" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="State">Longitude</label>
+                <input type="address" class="form-control" name="Longitude" id="Longitude" placeholder="Longitude" required>
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="State">location</label>
+                <input type="address" class="form-control" name="location" id="location" placeholder="location" required>
+            </div>
+            
+            
+            <div class="col-sm-4 form-group">
+                <label for="Report">Report</label>
+                <select class="form-control custom-select browser-default">
+                    <option value="True">True</option>
+                    <option value="False">False</option>
+
+                </select>
+            </div>
+            
+            
+            <div class="col-sm-2 form-group">
+                <label for="cod">Status</label>
+                <select class="form-control browser-default custom-select">
+                    
+                <option  value="Up Coming">Up Coming</option>
+                <option  value="Ongoing">Ongoing</option>
+                <option  value="Finished">Finished</option>
+  
+                </select>
+            </div>
+ 
+            
+            <div class="col-sm-12 mb-0">
+                
+               <button class="btn btn-primary float-right" type="submit">Submit</button>
+      
+            </div>
+           
+        </form>
+          
+            
+        </div>
+        
+    </div>
+
+
+</body>
+<style>
+    label {
+    font-weight: 600;
+    color: black;
+}
+body {
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+
+}
+</style>
+</html>
